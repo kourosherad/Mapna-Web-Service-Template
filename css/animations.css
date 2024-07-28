@@ -1,0 +1,61 @@
+
+        /* ANIMATION LEFT  */
+
+        
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-left {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+        /* ANIMATION RIGHT  */
+
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+        /* ANIMATION BOTTOM  */
+
+
+@keyframes slideInFromBottom {
+    50%  {scrollbar-width: 50%; left-100:px; top:0;}
+}
+
+.animate-bottom {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+
+        /* ANIMATION TOP  */
+
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
+.animate-top {
+    animation: slideInFromTop 1s ease-out;
+}
+
