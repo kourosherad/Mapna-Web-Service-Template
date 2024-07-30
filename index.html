@@ -16,6 +16,9 @@
             <link rel="stylesheet" href="css/w3colors.css">
             <link rel="stylesheet" href="css/animations.css">
             <script src="https://kit.fontawesome.com/ee4d6b469e.js" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="jquery.js"></script>
+            <script src="script.js"></script>
 
     
 </head>
@@ -30,16 +33,16 @@
                 <a href="#home"><img src="img/MAPNA-Group-Logo-EN-Horizontal-600.png" alt="Logo" class="logo"></a>
             </span>
         
-            <span class="w3-right w3-mobile">
+            <span class="w3-right w3-mobile ">
                 <div class="w3-bar w3-black ">
-                    <div class="w3-dropdown-hover w3-bar-black w3-mobile">
-                      <button class="w3-button w3-black w3-hover-red w3-large"> Services <i class="fa fa-caret-down"></i></button>
-                      <div class="w3-dropdown-content w3-bar-block w3-animate-opacity">
+                    <div class="w3-dropdown-hover w3-bar-black w3-mobile l1">
+                      <button class="servicebtn w3-button w3-black w3-hover-red w3-large"> Services <i class="fa fa-caret-down"></i></button>
+                      <div class="w3-dropdown-content w3-bar-block l1-1">
 
-                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red ">Marketing</a>
-                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red ">Cloud Hosting</a>
-                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red ">Software Development</a>
-                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red ">SEO</a>
+                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red m" id="marketingdrop">Marketing</a>
+                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red c" id="clouddrop">Cloud Hosting</a>
+                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red s" id="softwaredrop">Software Development</a>
+                        <a href="#services" class="w3-mobile w3-bar-item w3-button w3-dark-grey w3-hover-red se" id="seodrop">SEO</a>
                       </div>
                     </div>
                    
@@ -319,8 +322,8 @@
                                     <input class="w3-input w3-border w3-margin-bottom w3-round-xlarge"
                                     type="password" placeholder="Confirm Password">
                                     
-                                    <button class="w3-bar w3-black w3-button-block w3-section w3-padding w3-round-xlarge">
-                                        Submit
+                                    <button id="reg-btn" class="w3-bar w3-black w3-button-block w3-section w3-padding w3-round-xlarge">
+                                        Register
                                     </button>
                               
                                 </div>
@@ -332,16 +335,18 @@
     
     
             
-            <script>
-                function mwsFunction(id) {
-                  var x = document.getElementById(id);
-                  if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                  } else {
-                    x.className = x.className.replace(" w3-show", "");
-                  }
-                }
-            </script>   
+
+
+<script>
+            function mwsFunction(id) {
+            var x = document.getElementById(id);
+               if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            } else {
+            x.className = x.className.replace(" w3-show", "");
+             }
+            }
+ </script>   
 
             <!--  Smooth scrolling  -->
 
@@ -374,5 +379,6 @@ $(document).ready(function(){
 </script>
 
 
+ 
 </body>
 </html>
